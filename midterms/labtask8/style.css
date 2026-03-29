@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease;
+}
+
+p {
+  text-align: justify;
+}
+
+/* =========================================
+   THEME 1 – DARK GREEN 🌲
+========================================= */
+body.theme-1 {
+  background-color: #e8f5e9;
+  margin: 0;
+  padding: 40px 0;
+  color: #1b5e20;
+}
+
+.theme-1 header,
+.theme-1 main,
+.theme-1 footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.theme-1 header {
+  background-color: #1b5e20;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.theme-1 main {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.theme-1 nav {
+  width: 25%;
+  float: left;
+}
+
+.theme-1 nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.theme-1 nav li {
+  background-color: #f1f8e9;
+  border: 1px solid #66bb6a;
+  padding: 10px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-1 nav li:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.theme-1 nav li.active {
+  background-color: #1b5e20;
+  color: white;
+}
+
+.theme-1 section {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+
+.theme-1 aside {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  background-color: #2e7d32;
+  color: white;
+  border-radius: 10px;
+}
+
+.theme-1 footer {
+  clear: both;
+  background-color: #f1f8e9;
+  border: 1px solid #66bb6a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* =========================================
+   THEME 2 – SOFT GREEN 🌿
+========================================= */
+body.theme-2 {
+  margin: 0;
+  padding: 40px 0;
+  background-color: #f1f8e9;
+  color: #1b5e20;
+}
+
+.theme-2 header,
+.theme-2 main,
+.theme-2 footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.theme-2 header {
+  background-color: #81c784;
+  color: #0d3b1e;
+  padding: 30px 20px;
+}
+
+.theme-2 main {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.theme-2 nav {
+  float: right;
+  width: 180px;
+}
+
+.theme-2 nav li {
+  background-color: #a5d6a7;
+  border: 2px solid #388e3c;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.theme-2 nav li:hover {
+  background-color: white;
+  color: #2e7d32;
+}
+
+.theme-2 nav li.active {
+  background-color: white;
+}
+
+.theme-2 section {
+  float: left;
+  width: calc(100% - 220px);
+}
+
+.theme-2 section h2 {
+  color: #2e7d32;
+}
+
+.theme-2 aside {
+  clear: both;
+  background-color: #c8e6c9;
+  padding: 20px;
+  margin: 20px -20px;
+}
+
+.theme-2 footer {
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================================
+   THEME 3 – FRESH GREEN 🍃
+========================================= */
+body.theme-3 {
+  margin: 0;
+  padding: 40px 0;
+  background-color: #f9fbe7;
+  color: #2e7d32;
+}
+
+.theme-3 header,
+.theme-3 main,
+.theme-3 footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.theme-3 header h1 {
+  color: #43a047;
+}
+
+.theme-3 main {
+  overflow: hidden;
+}
+
+.theme-3 nav li {
+  background-color: #dcedc8;
+  border: 1px solid #8bc34a;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.theme-3 nav li:hover {
+  background-color: #8bc34a;
+  color: white;
+}
+
+.theme-3 nav li.active {
+  background-color: #558b2f;
+  color: white;
+}
+
+.theme-3 aside {
+  background-color: #aed581;
+  padding: 15px;
+}
+
+.theme-3 footer {
+  background-color: #689f38;
+  color: white;
+  padding: 15px;
+}
+
+/* =========================================
+   RESPONSIVE 📱💻
+========================================= */
+@media screen and (max-width: 800px) {
+  nav,
+  section,
+  aside {
+    width: 100% !important;
+    float: none !important;
+  }
+}
