@@ -1,0 +1,237 @@
+/* =============================================
+   Finals Task 3 – Bootstrap Grid
+   External Stylesheet
+   ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f0f2f5;
+  color: #111;
+  padding: 2rem 1rem;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+.task-header {
+  margin-bottom: 2rem;
+}
+
+.task-header h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.task-header h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.task-header p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---- Layout Label ---- */
+.layout-label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.layout-label-desc {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333;
+  margin-top: 0.4rem;
+  line-height: 1.6;
+}
+
+/* ---- Layout Containers ---- */
+.layout-container {
+  background: #e2e2e2;
+  padding: 12px;
+}
+
+/* ---- Custom Flexbox Preview Grid ---- */
+.preview-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 3px;
+}
+
+.preview-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3px;
+}
+
+/* Column wrappers — stretch to equal height */
+.preview-half,
+.preview-quarter,
+.preview-third,
+.preview-two-thirds {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-half       { flex: 2; }
+.preview-quarter    { flex: 1; }
+.preview-third      { flex: 1; }
+.preview-two-thirds { flex: 2; }
+
+/* Responsive Grid: Stack columns on mobile */
+@media (max-width: 767px) {
+  .preview-row {
+    flex-direction: column;
+  }
+  
+  .preview-half,
+  .preview-quarter,
+  .preview-third,
+  .preview-two-thirds {
+    width: 100%;
+    flex: none; /* Reset flex ratios on mobile */
+  }
+}
+
+/* No margin-bottom or extra spacing on boxes inside previews */
+.preview-row .box,
+.preview-stack .box {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+
+/* ---- Shared Box Style ---- */
+.box {
+  padding: 1rem 1.25rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+/* ---- Layout 1 Colors ---- */
+.box-green {
+  background-color: #6366f1;
+  border-radius: 8px;
+}
+
+.box-purple {
+  background-color: #a855f7;
+  border: 2px dashed #ffffff;
+  border-radius: 8px;
+}
+
+/* ---- Layout 2 Colors ---- */
+.box-salmon {
+  background-color: #f43f5e;
+  border-radius: 8px;
+}
+
+.box-teal {
+  background-color: #fb923c;
+  border-radius: 8px;
+}
+
+/* ---- Layout 3 Colors ---- */
+.box-blue {
+  background-color: #0ea5e9;
+  border-radius: 8px;
+}
+
+.box-dark-teal {
+  background-color: #10b981;
+  border-radius: 8px;
+}
+
+/* ---- Layout 4 ---- */
+.layout-4-bg {
+  background: #f8fafc;
+  padding: 3rem 1.5rem;
+}
+
+.layout4-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+
+.card-custom {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.card-num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #6366f1;
+}
+
+.card-body-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #475569;
+  flex: 1;
+}
+
+.card-custom .btn-info {
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 24px;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+}
+
+.card-custom .btn-info:hover {
+  background-color: #4f46e5;
+}
+
+/* ---- Responsive adjustments ---- */
+@media (max-width: 767px) {
+  .layout-container .box {
+    margin-bottom: 0.4rem;
+  }
+}
